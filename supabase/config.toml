@@ -1,0 +1,114 @@
+project_id = "hhkbtwcmztozihipiszm"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "graphql_public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[db]
+port = 54322
+major_version = 15
+
+[studio]
+enabled = true
+port = 54323
+api_url = "http://127.0.0.1"
+
+[auth]
+enabled = true
+site_url = "http://127.0.0.1:3000"
+additional_redirect_urls = ["https://127.0.0.1:3000"]
+jwt_expiry = 3600
+enable_signup = true
+enable_anonymous_sign_ins = false
+
+[auth.email]
+enable_signup = true
+double_confirm_changes = true
+enable_confirmations = false
+
+[functions.research-scrape]
+verify_jwt = false
+
+[functions.research-search]
+verify_jwt = false
+
+[functions.research-analyze]
+verify_jwt = false
+
+[functions.research-map]
+verify_jwt = false
+
+[functions.research-extract]
+verify_jwt = false
+
+[functions.enhance-prompt]
+verify_jwt = false
+
+[functions.execute-scheduled-task]
+verify_jwt = false
+
+[functions.send-report-email]
+verify_jwt = false
+
+[functions.ai-web-search]
+verify_jwt = false
+
+[functions.web-search]
+verify_jwt = false
+
+[functions.research-orchestrator]
+verify_jwt = false
+
+[functions.export-report]
+verify_jwt = false
+
+[functions.task-scheduler]
+verify_jwt = false
+
+[functions.ai-scrape-command]
+verify_jwt = false
+
+[functions.lead-enrichment]
+verify_jwt = false
+
+[functions.wide-research]
+verify_jwt = false
+
+[functions.web-crawl]
+verify_jwt = false
+
+[functions.generate-icon]
+verify_jwt = false
+
+[functions.zahra-chat]
+verify_jwt = false
+
+[functions.summarize-news]
+verify_jwt = false
+
+[functions.explorium-enrich]
+verify_jwt = false
+
+[functions.manus-realtime]
+verify_jwt = false
+
+[functions.gpt-researcher]
+verify_jwt = false
+
+[functions.crawl4ai]
+verify_jwt = false
+
+[functions.browser-use]
+verify_jwt = false
+
+[functions.deepseek-router]
+verify_jwt = false
+
+[functions.playwright-browser]
+verify_jwt = false
+
+[functions.llm-router]
+verify_jwt = false
