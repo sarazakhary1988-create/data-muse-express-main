@@ -1,29 +1,103 @@
-# DataMuse Express API
+# Welcome to your Lovable project
 
-A comprehensive Node.js/Express application for DataMuse API queries with advanced features.
+## Project info
 
-## Quick Start
+**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
 
-```bash
-npm install
-npm start
+## How can I edit this code?
+
+There are several ways of editing your application.
+
+**Use Lovable**
+
+Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+
+Changes made via Lovable will be committed automatically to this repo.
+
+**Use your preferred IDE**
+
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+
+Follow these steps:
+
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
+
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
+
+# Step 3: Install the necessary dependencies.
+npm i
+
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
 ```
 
-Server runs on port 3000 by default.
+**Edit a file directly in GitHub**
 
-## Features
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-- Full DataMuse API integration
-- Advanced word/linguistic queries
-- Clean architecture with routes → controllers → services
-- Comprehensive error handling
-- Built-in middleware validation
-- Development mode with auto-reload
+**Use GitHub Codespaces**
 
-## API Endpoints
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-See `/api/words` and related endpoints for available queries.
+## What technologies are used for this project?
 
-## Documentation
+This project is built with:
 
-Detailed API documentation available in the `README.md` files within each directory.
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
+
+## How can I deploy this project?
+
+### Deploy via Lovable
+
+Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+
+### Deploy via Netlify
+
+This project includes Netlify configuration for easy deployment. You have three options:
+
+**1. Deploy via Netlify Dashboard (Recommended)**
+- Go to [app.netlify.com](https://app.netlify.com) and click "Add new site"
+- Connect your Git repository (GitHub, GitLab, or Bitbucket)
+- Netlify will automatically detect the build settings from `netlify.toml`
+- Click "Deploy"
+
+**2. Deploy via Netlify CLI**
+```sh
+npm install -g netlify-cli
+netlify login
+netlify deploy --prod
+```
+
+**3. Automatic CI/CD**
+Once connected via the Netlify Dashboard, every push to your main branch will automatically deploy.
+
+For detailed instructions, see [NETLIFY_DEPLOYMENT.md](./NETLIFY_DEPLOYMENT.md)
+
+## Can I connect a custom domain?
+
+### Lovable Project
+
+Yes, you can! Navigate to Project > Settings > Domains and click Connect Domain.
+
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+
+### Netlify
+
+Yes! Go to Site Settings → Domain management → Add custom domain and follow the DNS configuration instructions.
+
+For more details, see [NETLIFY_DEPLOYMENT.md](./NETLIFY_DEPLOYMENT.md#custom-domain)
